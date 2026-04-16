@@ -1,8 +1,9 @@
 # Development (DEV) Environment - terraform.tfvars.dev
 # Copy to terraform.tfvars and use -var-file flag: terraform apply -var-file="terraform.tfvars.dev"
 
-cplane   = "us"
-root_org = "eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee"
-env_id   = "ffffffff-ffff-ffff-ffff-ffffffffffff"
+cplane        = "us"
+root_org      = "eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee"
+env_id        = "ffffffff-ffff-ffff-ffff-ffffffffffff"
 client_id     = "dev-client-id-development"
 client_secret = "dev-client-secret-development"
+target_name   = "flexgateway-dev"

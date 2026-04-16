@@ -1,8 +1,9 @@
 # Non-Production (NPD) Environment - terraform.tfvars.npd
 # Copy to terraform.tfvars and use -var-file flag: terraform apply -var-file="terraform.tfvars.npd"
 
-cplane   = "us"
-root_org = "cccccccc-cccc-cccc-cccc-cccccccccccc"
-env_id   = "dddddddd-dddd-dddd-dddd-dddddddddddd"
+cplane        = "us"
+root_org      = "cccccccc-cccc-cccc-cccc-cccccccccccc"
+env_id        = "dddddddd-dddd-dddd-dddd-dddddddddddd"
 client_id     = "npd-client-id-nonproduction"
 client_secret = "npd-client-secret-nonproduction"
+target_name   = "flexgateway-npd"

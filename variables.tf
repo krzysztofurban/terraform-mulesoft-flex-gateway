@@ -22,3 +22,8 @@ variable "client_secret" {
   default = ""
   description = "client_secret"
 }
+
+variable "target_name" {
+  default = ""
+  description = "Name of the target to pick"
+}

@@ -1,11 +1,11 @@
 
-variable "flexgateway_target_id" {
-  default = ""
-  description = "It is the GUID of the target where you want to deploy the Flex Gateway. You can find this value in the URL when you are in the Anypoint Platform, it is the value after /targets/ and before /details/."
-}
 
+
+locals {
+  get_target_id_by_name = [for t in data.anypoint_flexgateway_targets.targets.targets : t.id if t.name == var.target_name][0]
+}
 data "anypoint_flexgateway_target" "target" {
-  id     = var.flexgateway_target_id
+  id     = [for t in data.anypoint_flexgateway_targets.targets.targets : t.id if t.name == var.target_name][0]
   org_id = var.root_org
   env_id = var.env_id
 }
