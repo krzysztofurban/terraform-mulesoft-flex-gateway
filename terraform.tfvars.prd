@@ -1,0 +1,8 @@
+# Production (PRD) Environment - terraform.tfvars.prd
+# Copy to terraform.tfvars and use -var-file flag: terraform apply -var-file="terraform.tfvars.prd"
+
+cplane   = "us"
+root_org = "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+env_id   = "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"
+client_id     = "prd-client-id-production"
+client_secret = "prd-client-secret-production"

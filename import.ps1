@@ -1,0 +1,1 @@
+terraform import anypoint_apim_flexgateway.fg xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/20854763
